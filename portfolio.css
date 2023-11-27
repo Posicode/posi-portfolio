@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --white:rgba(255, 255, 255, 0.90);
+    --full_white:#ffffff;
+    --main:#FF6B00;
+    --font_size:16px;
+    --mid_font_size:20px;
+    --small_font_size:14px;
+    --line_height:24px;
+    --mid_line_height:30px;
+    --sec_head:40px;
+  }
+
+
+body{
+    margin: 0;
+    background: #22222B;
+    font-family: "Red Hat Display";
+    margin-bottom: 50px;
+}
+
+p{
+    margin: 0;
+}
+
+#hero_section{
+    width: 100%;
+    position: relative;
+}
+
+#head{
+    margin: 40px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 70px;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: var(--white);
+    font-family: "Red Hat Display";
+    font-size: var(--font_size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+#text_section{
+    width: calc(100% - 140px);
+    margin: 50px 70px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+#head_text{
+    color: var(--white);
+    font-family: "Square Game";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+
+#head_text span{
+    color:var(--main)
+}
+
+#sub_text{
+    color: var(--white);
+    text-align: justify;
+    font-family: "Red Hat Display";
+    font-size: var(--mid_font_size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--mid_line_height);
+    letter-spacing: 0.4px;
+}
+
+#fun{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 576px;
+    z-index: -1;
+}
+
+#funtwo{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    display: none;
+}
+
+#cross{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url("Cross.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -30px;
+}
+
+#scroll_link{
+    text-decoration: none;
+    position: relative;
+    top: -350px;
+}
+
+#scroll{
+    display: flex;
+    align-items: flex-start;
+}
+
+#scroll img{
+    height: 70px;
+    margin-left: -40px;
+}
+
+#scroll p{
+    transform: rotate(-90deg);
+    color: var(--white);
+    text-align: justify;
+    font-family: "Red Hat Display";
+    font-size: var(--small_font_size);
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+#projects, #skills, #contact, #socials{
+    margin: 100px 70px;
+}
+
+#all_projects{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: auto auto;
+}
+
+#pro_title{
+    color: var(--main);
+    font-family: "Square Game";
+    font-size: var(--sec_head);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#first_project{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#first_cov{
+    position: relative;
+}
+
+#pro_name{
+    color: var(--full_white);
+    text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    font-family: "Montserrat Subrayada";
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.8;
+    width: 343px;
+    word-wrap: break-word;
+}
+
+.back{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: -1;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.35);
+}
+
+#pro_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+}
+
+#first_text{
+    color: var(--white);
+    text-align: justify;
+    font-family: "Red Hat Display";
+    font-size: var(--font_size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--line_height); /* 150% */
+    letter-spacing: 0.16px;
+    width: 495px;
+}
+
+#tags{
+    display: flex;
+    color: var(--full_white);
+    gap: 10px;
+    text-align: justify;
+    font-family: "Red Hat Display";
+    font-size: var(--font_size);
+    font-style: normal;
+    font-weight: 700;
+    line-height: var(--line_height); /* 150% */
+    letter-spacing: 0.16px;
+    text-transform: lowercase;
+}
+
+#type{
+    color: var(--main);
+}
+
+#second_back{
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.35);
+    top: 0;
+    left: 0;
+}
+
+#seconds_back{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    z-index: -1;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.35);
+}
+
+#moorback{
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    z-index: -1;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.35);
+}
+
+#spurback{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#afro{
+    color: var(--full_white);
+    text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+    font-family: "Montserrat Subrayada";
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.8;
+    width: 360px;
+    word-wrap: break-word;
+}
+
+
+#afro span{
+    color: var(--main);
+}
+
+#cloveback{
+    position: absolute;
+    bottom: 40px;
+    left: 95px;
+    z-index: -1;
+}
+
+#all_skills{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    row-gap: 30px;
+    flex-wrap: wrap;
+    color: var(--white);
+    font-family: "Red Hat Display";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#all_skills span{
+    color: var(--main);
+    font-size: var(--sec_head);
+}
+
+#c-text{
+    color: var(--white);
+    font-family: "Red Hat Display";
+    font-size: var(--mid_font_size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+form{
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: auto auto;
+    margin-top: 16px;
+}
+
+input{
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    padding: 14px;
+    background: none;
+    font-family: "Red Hat Display";
+    font-size: var(--font_size);
+    font-weight: 400;
+    line-height: normal;
+    color: var(--white);
+}
+
+.others,textarea{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+textarea{
+    height: 120px;
+    padding: 14px;
+    background: none;
+    font-family: "Red Hat Display";
+    font-size: var(--font_size);
+    font-weight: 400;
+    line-height: normal;
+    color: var(--white);
+}
+
+button{
+    width: 140px;
+    height: 49px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main);
+    color: var(--white);
+    font-family: "Red Hat Display";
+    font-size: var(--font_size);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+}
+
+#icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#icons img{
+    width: 124px;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    #head{
+        margin: 25px 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo{
+        width: 50px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    :root {
+        --font_size:14px;
+        --mid_font_size:16px;
+        --small_font_size:12px;
+        --line_height:21px;
+        --mid_line_height:24px;
+        --sec_head:25px;
+    }
+
+    #text_section{
+        width: calc(100% - 50px);
+        margin: 40px 25px;
+    }
+
+    #head_text{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    #fun{
+        display: none;
+    }
+
+    #funtwo{
+        display: block;
+    }
+
+    #cross{
+        position: relative;
+        width: 100%;
+        height: 182px;
+        background-image: url("cross\ 2.png");
+        margin-top: -30px;
+    }
+
+    #scroll_link{
+        top: 50px;
+        left: -10px;
+    }
+    
+    #scroll{
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    #scroll img{
+        height: 70px;
+        margin-left: -40px;
+    }
+
+    #projects, #skills, #contact, #socials{
+        margin: 100px 25px;
+    }
+
+    #all_projects{
+        display: flex;
+        gap: 100px;
+        flex-direction: column;
+    }
+
+    #pro_body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .back{
+        bottom: 0;
+        left: 20px;
+        width: 90%;
+    }
+
+    #spurback{
+        position: absolute;
+        top: 0px;
+        left: -15px;
+        z-index: -1;
+    }
+
+    #afro{
+        color: var(--full_white);
+        text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+        font-family: "Montserrat Subrayada";
+        font-size: 115px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        opacity: 0.8;
+        width: 343px;
+        word-wrap: break-word;
+    }
+
+    #first_text{
+        width: 343px;
+    }
+
+    #all_skills{
+        row-gap: 10px;
+        font-size: var(--mid_font_size);
+    }
+    
+    #all_skills span{
+        color: var(--main);
+        font-size: var(--sec_head);
+    }
+
+    #c-text{
+        line-height: var(--mid_line_height);
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 16px;
+    }
+
+    button{
+        width: auto;
+    }
+
+    #icons{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        row-gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    #icons img{
+        width: 100px;
+    }
+  }
