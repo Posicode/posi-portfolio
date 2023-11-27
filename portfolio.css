@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
-    font-family: SquareGame;
+    font-family: Square_Game;
     src: url(Square\ Game.otf);
   }
 
@@ -69,7 +69,7 @@ nav a{
 
 #head_text{
     color: var(--white);
-    font-family: SquareGame;
+    font-family: Square_Game;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
@@ -160,7 +160,7 @@ nav a{
 
 #pro_title{
     color: var(--main);
-    font-family: SquareGame;
+    font-family: Square_Game;
     font-size: var(--sec_head);
     font-style: normal;
     font-weight: 400;
