@@ -175,6 +175,10 @@ nav a{
     gap: 20px;
 }
 
+#first_project a{
+    text-decoration: none;
+}
+
 #first_cov{
     position: relative;
 }
