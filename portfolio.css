@@ -3,6 +3,8 @@
 @font-face {
     font-family: Square_Game;
     src: url(Square\ Game.otf);
+    src: url(Square_Game.eot);
+    src: url(Square_Game.woff)
   }
 
 :root {
